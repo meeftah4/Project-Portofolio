@@ -1,0 +1,31 @@
+📝 Catatan Sederhana Membuat Proyek Spring Boot (via VS Code)
+1. Persiapan Awal (Satu Kali Saja)
+
+Pastikan Anda sudah menginstal Java Development Kit (JDK) di komputer Anda (minimal versi 17).
+Di VS Code, buka menu Extensions (Ctrl+Shift+X).
+Cari dan instal Extension Pack for Java (dari Microsoft) dan Spring Boot Extension Pack (dari VMware).
+2. Membuat Proyek Baru (Generate Project)
+
+Buka Command Palette dengan menekan Ctrl + Shift + P.
+Ketik dan pilih command Spring Initializr Create a Maven Project...
+Isi langkah-langkah yang diminta (biasanya muncul di bagian atas VS Code)
+Spring Boot Version Pilih versi terbaru yang stabil (jangan yang berakhiran SNAPSHOT, M, atau RC).
+Language Pilih Java.
+Group Id Ketik package utama Anda (Contoh com.belajar). Tekan Enter.
+Artifact Id Ketik nama proyek Anda (Contoh belajarspringboot). Tekan Enter.
+Packaging Pilih Jar.
+Java Version Pilih versi JDK yang Anda miliki (Misal 17 atau 21).
+Dependencies Ketikkan Spring Web pada kotak pencarian, lalu centang. Jika Anda butuh yang lain (seperti Spring Data JPA atau MySQL Driver untuk database), Anda juga bisa mencentangnya sekarang. Setelah selesai memilih, tekan tombol Enter yang ada di bagian atas.
+Pilih folderdirectory di komputer Anda sebagai tempat menyimpan proyek tersebut.
+VS Code akan menghasilkan (generate) proyek. Di pojok kanan bawah, akan muncul notifikasi Successfully generated.... Klik tombol Open.
+3. Mengenal Struktur Folder Wajib (Sama seperti sebelumnya)
+
+java Tempat utama Anda menulis file .java (seperti Controller, Model).
+resources Tempat file pendukung (application.properties, HTMLCSS).
+pom.xml Perekam perpustakaan  library atau dependencies. Jika terlupa menambahkan pustaka di awal, Anda mengekstrak kodenya dari internet lalu memasukkannya ke sini.
+4. Menjalankan Aplikasi
+
+Cari file yang ada tulisan ...Application.java (Contoh BelajarspringbootApplication.java). File ini diberi simbol @SpringBootApplication.
+Arahkan kursor tetikus Anda ke atas tulisan public static void main(...).
+Akan muncul tombol interaktif Run atau Debug kecil di atas kodenya. Klik Run.
+(Atau Anda bisa membuka bagian Spring Boot Dashboard di panel kiri bawah VS Code, lalu mengeklik tombol PlayStart di nama proyek Anda).

@@ -1,0 +1,49 @@
+{
+  "properties": [
+    {
+      "name": "app.cors.allowed-origins",
+      "type": "java.lang.String",
+      "description": "Comma-separated list of allowed origins for API CORS."
+    },
+    {
+      "name": "app.security.jwt-secret",
+      "type": "java.lang.String",
+      "description": "Secret key used to sign JWT tokens."
+    },
+    {
+      "name": "app.security.jwt-expiration-hours",
+      "type": "java.lang.Long",
+      "description": "JWT token expiration in hours."
+    },
+    {
+      "name": "app.security.refresh-token-expiration-days",
+      "type": "java.lang.Long",
+      "description": "Refresh token expiration in days."
+    },
+    {
+      "name": "app.admin.bootstrap-enabled",
+      "type": "java.lang.Boolean",
+      "description": "Create default admin account at startup when true."
+    },
+    {
+      "name": "app.admin.username",
+      "type": "java.lang.String",
+      "description": "Default admin username used for bootstrap."
+    },
+    {
+      "name": "app.admin.email",
+      "type": "java.lang.String",
+      "description": "Default admin email used for bootstrap."
+    },
+    {
+      "name": "app.admin.password",
+      "type": "java.lang.String",
+      "description": "Default admin password used for bootstrap."
+    },
+    {
+      "name": "app.admin.full-name",
+      "type": "java.lang.String",
+      "description": "Default admin full name used for bootstrap."
+    }
+  ]
+}
